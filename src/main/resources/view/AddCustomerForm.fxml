@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.addCustomerFormController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="634.0" fitWidth="1005.0" layoutX="416.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/gen/Default_A_simple_minimalist_background_for_clothing_shop_softw_2_b470f2b6-3caf-4f7b-bc53-1968ca09f142_0.png" />
+               </image>
+            </ImageView>
+            <Pane fx:id="dpane_111" layoutX="54.0" layoutY="85.0" prefHeight="106.0" prefWidth="150.0" style="-fx-background-color: #7ea5c3;" styleClass="dpane_1" stylesheets="@style.css">
+               <children>
+                  <Label layoutX="11.0" prefHeight="54.0" prefWidth="116.0" text="Customer ID" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic" size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="txtCusID" layoutX="14.0" layoutY="53.0" prefHeight="41.0" prefWidth="107.0" promptText="C001" styleClass="user-input" stylesheets="@style.css" />
+               </children>
+            </Pane>
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="70.0" prefWidth="464.0" text="Customer Management" textFill="#193d5d" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+               <font>
+                  <Font name="System Bold Italic" size="36.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="64.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/icons8-find-user-male-100.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <TableView fx:id="tblCustomer" layoutX="54.0" layoutY="446.0" prefHeight="239.0" prefWidth="763.0" styleClass="custom-table-view" stylesheets="@style.css">
+              <columns>
+                <TableColumn fx:id="CusID" prefWidth="105.60000228881836" text="Customer Id" />
+                <TableColumn fx:id="CusName" prefWidth="175.2000274658203" text="Customer Name" />
+                  <TableColumn fx:id="CusEmail" prefWidth="193.5999755859375" text="Email" />
+                  <TableColumn fx:id="cusAddress" prefWidth="286.4000122070313" text="Customer Address" />
+              </columns>
+            </TableView>
+            <Pane fx:id="dpane_1111" layoutX="218.0" layoutY="85.0" prefHeight="106.0" prefWidth="306.0" style="-fx-background-color: #7ea5c3;" styleClass="dpane_1" stylesheets="@style.css">
+               <children>
+                  <Label layoutX="11.0" prefHeight="54.0" prefWidth="158.0" text="Customer Name" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic" size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="txtCusName" layoutX="14.0" layoutY="53.0" prefHeight="25.0" prefWidth="277.0" styleClass="user-input" stylesheets="@style.css" />
+               </children>
+            </Pane>
+            <Pane fx:id="dpane_11111" layoutX="51.0" layoutY="205.0" prefHeight="106.0" prefWidth="306.0" style="-fx-background-color: #7ea5c3;" styleClass="dpane_1" stylesheets="@style.css">
+               <children>
+                  <Label layoutX="11.0" prefHeight="54.0" prefWidth="277.0" text="Customer Email" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic" size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="txtCusEmail" layoutX="14.0" layoutY="53.0" prefHeight="25.0" prefWidth="277.0" styleClass="user-input" stylesheets="@style.css" />
+               </children>
+            </Pane>
+            <Pane fx:id="dpane_111111" layoutX="51.0" layoutY="325.0" prefHeight="106.0" prefWidth="464.0" style="-fx-background-color: #7ea5c3;" styleClass="dpane_1" stylesheets="@style.css">
+               <children>
+                  <Label layoutX="11.0" prefHeight="54.0" prefWidth="277.0" text="Customer Address" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic" size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="txtCusAddress" layoutX="14.0" layoutY="53.0" prefHeight="41.0" prefWidth="435.0" styleClass="user-input" stylesheets="@style.css" />
+               </children>
+            </Pane>
+            <JFXButton contentDisplay="TOP" layoutX="373.0" layoutY="204.0" onAction="#cusBtnSearch" prefHeight="106.0" prefWidth="138.0" styleClass="search-btn" stylesheets="@style.css" text="Search" textAlignment="CENTER">
+               <font>
+                  <Font name="Century Gothic Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="54.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/serch1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton contentDisplay="TOP" layoutX="537.0" layoutY="85.0" onAction="#cusBtnAdd" prefHeight="106.0" prefWidth="138.0" styleClass="search-btn" stylesheets="@style.css" text="ADD" textAlignment="CENTER">
+               <font>
+                  <Font name="Century Gothic Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="54.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/icons8-add-user-100.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton contentDisplay="TOP" layoutX="537.0" layoutY="204.0" onAction="#cusBtnUpdate" prefHeight="106.0" prefWidth="138.0" styleClass="search-btn" stylesheets="@style.css" text="Update" textAlignment="CENTER">
+               <font>
+                  <Font name="Century Gothic Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="54.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/icons8-update-user-100.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton contentDisplay="TOP" layoutX="537.0" layoutY="325.0" onAction="#cusBtnDelete" prefHeight="106.0" prefWidth="138.0" styleClass="search-btn" stylesheets="@style.css" text="Delete" textAlignment="CENTER">
+               <font>
+                  <Font name="Century Gothic Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="54.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/icons8-delete-user-100.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.AddItemFormController">
+    <children>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <ImageView fitHeight="634.0" fitWidth="1005.0" layoutX="416.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="0.40000000000009095" AnchorPane.topAnchor="27.0">
+                    <image>
+                        <Image url="@img/gen/Default_A_simple_minimalist_background_for_clothing_shop_softw_2_b470f2b6-3caf-4f7b-bc53-1968ca09f142_0.png" />
+                    </image>
+                </ImageView>
+                <Pane layoutX="54.0" layoutY="85.0" prefHeight="106.0" prefWidth="138.0" style="-fx-background-color: #7ea5c3;" styleClass="dpane_1" stylesheets="@style.css">
+                    <children>
+                        <Label layoutX="11.0" prefHeight="54.0" prefWidth="116.0" text="Product ID" textFill="WHITE">
+                            <font>
+                                <Font name="Century Gothic" size="18.0" />
+                            </font>
+                        </Label>
+                        <JFXTextField fx:id="txtID" layoutX="14.0" layoutY="53.0" prefHeight="41.0" prefWidth="107.0" promptText="P001" styleClass="user-input" stylesheets="@style.css" />
+                    </children>
+                </Pane>
+                <Label layoutX="14.0" layoutY="14.0" prefHeight="70.0" prefWidth="464.0" text="Item Management" textFill="#193d5d" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+                    <font>
+                        <Font name="System Bold Italic" size="36.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="64.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@img/icons8-find-user-male-100.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Label>
+                <TableView fx:id="itemTable" layoutX="54.0" layoutY="446.0" prefHeight="239.0" prefWidth="815.0" styleClass="custom-table-view" stylesheets="@style.css">
+                    <columns>
+                        <TableColumn fx:id="productID" prefWidth="98.39999008178711" text="PRODUCT ID" />
+                        <TableColumn fx:id="productCategory" prefWidth="123.0" text="Category" />
+                        <TableColumn fx:id="productName" prefWidth="243.0" text="Product Name" />
+                        <TableColumn fx:id="productSize" prefWidth="116.0" text="Product Size" />
+                  <TableColumn fx:id="productPrice" prefWidth="116.0" text="Unit Price" />
+                  <TableColumn fx:id="productQty" prefWidth="117.0" text="QTY" />
+                    </columns>
+                </TableView>
+                <Pane layoutX="205.0" layoutY="85.0" prefHeight="106.0" prefWidth="319.0" style="-fx-background-color: #7ea5c3;" styleClass="dpane_1" stylesheets="@style.css">
+                    <children>
+                        <Label layoutX="11.0" prefHeight="54.0" prefWidth="158.0" text="Product Name" textFill="WHITE">
+                            <font>
+                                <Font name="Century Gothic" size="18.0" />
+                            </font>
+                        </Label>
+                        <JFXTextField fx:id="txtName" layoutX="14.0" layoutY="53.0" prefHeight="40.0" prefWidth="276.0" styleClass="user-input" stylesheets="@style.css" />
+                    </children>
+                </Pane>
+                <Pane layoutX="54.0" layoutY="205.0" prefHeight="106.0" prefWidth="158.0" style="-fx-background-color: #7ea5c3;" styleClass="dpane_1" stylesheets="@style.css">
+                    <children>
+                        <Label layoutX="11.0" prefHeight="54.0" prefWidth="107.0" text="Unit Price" textFill="WHITE">
+                            <font>
+                                <Font name="Century Gothic" size="18.0" />
+                            </font>
+                        </Label>
+                        <JFXTextField fx:id="txtPrice" layoutX="14.0" layoutY="53.0" prefHeight="41.0" prefWidth="126.0" styleClass="user-input" stylesheets="@style.css" />
+                    </children>
+                </Pane>
+                <Pane layoutX="234.0" layoutY="205.0" prefHeight="106.0" prefWidth="116.0" style="-fx-background-color: #7ea5c3;" styleClass="dpane_1" stylesheets="@style.css">
+                    <children>
+                        <Label layoutX="11.0" prefHeight="54.0" prefWidth="76.0" text="Qty" textFill="WHITE">
+                            <font>
+                                <Font name="Century Gothic" size="18.0" />
+                            </font>
+                        </Label>
+                        <JFXTextField fx:id="txtQty" layoutX="11.0" layoutY="54.0" prefHeight="41.0" prefWidth="94.0" styleClass="user-input" stylesheets="@style.css" />
+                    </children>
+                </Pane>
+                <JFXButton contentDisplay="TOP" layoutX="544.0" layoutY="85.0" onAction="#btnSearchOnAction" prefHeight="106.0" prefWidth="138.0" styleClass="search-btn" stylesheets="@style.css" text="Search" textAlignment="CENTER">
+                    <font>
+                        <Font name="Century Gothic Bold" size="12.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="54.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@img/serch1.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </JFXButton>
+                <JFXButton contentDisplay="TOP" layoutX="700.0" layoutY="85.0" onAction="#btnAddOnAction" prefHeight="106.0" prefWidth="138.0" styleClass="search-btn" stylesheets="@style.css" text="ADD" textAlignment="CENTER">
+                    <font>
+                        <Font name="Century Gothic Bold" size="12.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="54.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@img/icons8-add-user-100.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </JFXButton>
+                <JFXButton contentDisplay="TOP" layoutX="544.0" layoutY="205.0" onAction="#btnUpdateOnAction" prefHeight="106.0" prefWidth="138.0" styleClass="search-btn" stylesheets="@style.css" text="Update" textAlignment="CENTER">
+                    <font>
+                        <Font name="Century Gothic Bold" size="12.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="54.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@img/icons8-update-user-100.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </JFXButton>
+                <JFXButton contentDisplay="TOP" layoutX="700.0" layoutY="205.0" onAction="#btnDeleteOnAction" prefHeight="106.0" prefWidth="138.0" styleClass="search-btn" stylesheets="@style.css" text="Delete" textAlignment="CENTER">
+                    <font>
+                        <Font name="Century Gothic Bold" size="12.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="54.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@img/icons8-delete-user-100.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </JFXButton>
+                <Pane layoutX="192.0" layoutY="322.0" prefHeight="106.0" prefWidth="490.0" style="-fx-background-color: #7ea5c3;" styleClass="dpane_1" stylesheets="@style.css">
+                    <children>
+                        <Label layoutX="11.0" prefHeight="54.0" prefWidth="132.0" text="Supplier ID" textFill="WHITE">
+                            <font>
+                                <Font name="Century Gothic" size="18.0" />
+                            </font>
+                        </Label>
+                        <JFXTextField fx:id="txtSupName" layoutX="150.0" layoutY="53.0" prefHeight="41.0" prefWidth="262.0" styleClass="user-input" stylesheets="@style.css" />
+                  <JFXComboBox fx:id="txtSupID" layoutX="14.0" layoutY="61.0" onAction="#supIDAction" prefHeight="33.0" prefWidth="86.0" />
+                  <Label layoutX="159.0" prefHeight="54.0" prefWidth="174.0" text="Supplier Name" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic" size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="412.0" layoutY="18.0" onAction="#supBtnSearchOnAction" prefHeight="70.0" prefWidth="70.0" text=".">
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fitHeight="54.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/serch1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                    </children>
+                </Pane>
+                <Pane layoutX="364.0" layoutY="205.0" prefHeight="106.0" prefWidth="158.0" style="-fx-background-color: #7ea5c3;" styleClass="dpane_1" stylesheets="@style.css">
+                    <children>
+                        <Label layoutX="11.0" prefHeight="54.0" prefWidth="126.0" text="Categoty" textFill="WHITE">
+                            <font>
+                                <Font name="Century Gothic" size="18.0" />
+                            </font>
+                        </Label>
+                  <JFXComboBox fx:id="txtCategory" layoutX="17.0" layoutY="63.0" prefHeight="33.0" prefWidth="94.0" />
+                    </children>
+                </Pane>
+            <Pane layoutX="54.0" layoutY="322.0" prefHeight="106.0" prefWidth="126.0" style="-fx-background-color: #7ea5c3;" styleClass="dpane_1" stylesheets="@style.css">
+               <children>
+                  <Label layoutX="11.0" prefHeight="54.0" prefWidth="70.0" text="Size" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic" size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXComboBox fx:id="txtSize" layoutX="18.0" layoutY="59.0" prefHeight="33.0" prefWidth="94.0" />
+               </children>
+            </Pane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

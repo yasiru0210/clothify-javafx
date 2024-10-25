@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.ViewOrderFormController">
+    <children>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <ImageView fitHeight="634.0" fitWidth="1005.0" layoutX="416.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@img/gen/Default_A_simple_minimalist_background_for_clothing_shop_softw_2_b470f2b6-3caf-4f7b-bc53-1968ca09f142_0.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="14.0" layoutY="14.0" prefHeight="70.0" prefWidth="464.0" text="View Orders" textFill="#193d5d" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+                    <font>
+                        <Font name="System Bold Italic" size="36.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="64.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@img/icons8-order-100.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Label>
+                <TableView fx:id="tblOrder" layoutX="54.0" layoutY="80.0" prefHeight="606.0" prefWidth="782.0" styleClass="custom-table-view" stylesheets="@style.css">
+                    <columns>
+                        <TableColumn fx:id="orderID" prefWidth="135.99999618530273" text="Order Id" />
+                        <TableColumn fx:id="date" prefWidth="255.99998474121094" text="Date" />
+                        <TableColumn fx:id="netTotal" prefWidth="209.60003662109375" text="Net Total" />
+                        <TableColumn fx:id="custID" prefWidth="180.800048828125" text="Customer ID" />
+                    </columns>
+                </TableView>
+                <JFXButton contentDisplay="TOP" layoutX="875.0" layoutY="80.0" onAction="#printBtnOnAction" prefHeight="106.0" prefWidth="138.0" styleClass="search-btn" stylesheets="@style.css" text="Print" textAlignment="CENTER">
+                    <font>
+                        <Font name="Century Gothic Bold" size="12.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="54.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@img/icons8-order-history-100.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </JFXButton>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

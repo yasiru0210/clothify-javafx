@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.demoController">
+   <children>
+      <ImageView fitHeight="634.0" fitWidth="1005.0" layoutX="381.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/gen/Default_A_simple_minimalist_background_for_clothing_shop_softw_2_b470f2b6-3caf-4f7b-bc53-1968ca09f142_0.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="dpane_1" layoutX="71.0" layoutY="206.0" prefHeight="241.0" prefWidth="137.0" style="-fx-background-color: #7ea5c3;" styleClass="dpane_1" stylesheets="@style.css">
+         <children>
+            <ImageView fitHeight="89.0" fitWidth="102.0" layoutX="24.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/icons8-users-100.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="11.0" prefHeight="54.0" prefWidth="116.0" text="No. of Customers" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="11.0" layoutY="152.0" prefHeight="89.0" prefWidth="116.0" text="10" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="dpane_11" layoutX="241.0" layoutY="206.0" prefHeight="241.0" prefWidth="137.0" style="-fx-background-color: #ffa397;" styleClass="dpane_1" stylesheets="@style.css">
+         <children>
+            <ImageView fitHeight="89.0" fitWidth="102.0" layoutX="24.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/icons8-employee-100.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="11.0" prefHeight="54.0" prefWidth="116.0" text="No.of Employees" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="11.0" layoutY="152.0" prefHeight="89.0" prefWidth="116.0" text="2000" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="dpane_111" layoutX="71.0" layoutY="483.0" prefHeight="155.0" prefWidth="306.0" style="-fx-background-color: #ffa397;" styleClass="dpane_1" stylesheets="@style.css">
+         <children>
+            <ImageView fitHeight="89.0" fitWidth="102.0" layoutX="11.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/icons8-sales-100.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="11.0" prefHeight="54.0" prefWidth="116.0" text="Today sales" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="127.0" layoutY="63.0" prefHeight="89.0" prefWidth="191.0" text="2000" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fitHeight="54.0" fitWidth="68.0" layoutX="961.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/icons8-admin-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="978.0" layoutY="626.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/icons8-log-out-100.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="915.0" layoutY="618.0" prefHeight="54.0" prefWidth="54.0" text="Log out" textFill="#193d5d">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="37.0" prefHeight="65.0" prefWidth="372.0" text="CLOTHIFY">
+         <font>
+            <Font name="System Bold Italic" size="48.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,192 @@
+.side_ankerpane {
+    -fx-background-color: #193d5d;
+    -fx-border-width: 2px;
+    -fx-border-radius: 0 20px 20px 8px; /* Add radius to bottom-left */
+    -fx-background-radius: 0 20px 20px 8px; /* Same for background */
+    -fx-border-style: none;
+}
+
+.inner_pane {
+    -fx-background-color: #7ea5c3;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: none;
+}
+
+.most_inner_pane {
+    -fx-background-color: #5d7990;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: none;
+}
+
+.btn {
+    -fx-border-width: 2px;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-border-style: none;
+    -fx-text-fill: white;
+    -fx-padding: 10px 20px;
+    /* Transition for smooth animation */
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.btn:hover {
+    -fx-background-color: #1f1f1f; /* Change background on hover */
+    -fx-border-color: #2c2c2c; /* Border color change on hover */
+    -fx-scale-x: 1.05; /* Slight scaling effect */
+    -fx-scale-y: 1.05; /* Slight scaling effect */
+}
+
+/* Active (pressed) effect */
+.btn:pressed {
+    -fx-background-color: #0d0d0d; /* Darken background on click */
+    -fx-scale-x: 0.95; /* Shrink slightly on click */
+    -fx-scale-y: 0.95; /* Shrink slightly on click */
+}
+
+.dpane_1 {
+    -fx-background-color: #748cf1;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    /* -fx-border-style: solid;
+    -fx-border-color: #748cf1; */
+}
+
+/* Custom style for a TextField */
+.user-input {
+    /* -fx-background-color: #a4d7ff; */
+    -fx-text-fill: #193d5d; /* Text color */
+    -fx-font-size: 14px; /* Font size */
+    -fx-padding: 10px; /* Padding inside the text field */
+    -fx-background-radius: 5px; /* Rounded corners */
+    /* -fx-border-color: #666666;  */
+    -fx-border-width: 1px; /* Border width */
+    -fx-border-radius: 5px; /* Rounded corners for the border */
+    -fx-font-weight: BOLD;
+}
+
+/* When the TextField is focused */
+.user-input:focused {
+    /* -fx-border-color: #0078d7;  */
+    -fx-background-color: #a4d7ff; /* Background color when focused */
+}
+
+/* Placeholder (prompt text) styling */
+.user-input .text-field .prompt-text {
+    -fx-text-fill: #aaaaaa; /* Color of placeholder text */
+    -fx-font-style: italic; /* Italic placeholder */
+}
+
+.search-btn {
+    -fx-background-color: #ffa397;
+    -fx-border-width: 2px;
+    -fx-border-radius: 2px;
+    -fx-background-radius: 20px;
+    -fx-border-style: none;
+    -fx-text-fill: white;
+    /* -fx-padding: 10px 20px; */
+    /* Transition for smooth animation */
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.search-btn:hover {
+    -fx-background-color: #c07a71; /* Change background on hover */
+    -fx-scale-x: 1.05; /* Slight scaling effect */
+    -fx-scale-y: 1.05; /* Slight scaling effect */
+}
+
+/* Active (pressed) effect */
+.search-btn:pressed {
+    -fx-background-color: #ffb097; /* Darken background on click */
+    -fx-scale-x: 0.95; /* Shrink slightly on click */
+    -fx-scale-y: 0.95; /* Shrink slightly on click */
+}
+/*
+
+Table
+
+*/
+/* Styling for the TableView */
+.custom-table-view {
+    -fx-background-color: #b8d8e5; /* Background color */
+    -fx-border-color: #193d5d; /* Border color */
+    -fx-border-width: 0px; /* Border thickness */
+    -fx-border-radius: 10px; /* Rounded corners */
+    -fx-table-cell-border-color: transparent; /* Remove cell borders */
+    -fx-background-radius: 10px;
+}
+
+/* Header styling */
+.custom-table-view .column-header-background {
+    -fx-background-color: #193d5d; /* Background color for header */
+    -fx-border-color: #193d5d; /* Border for the header */
+}
+
+.custom-table-view .table-column .label {
+    -fx-background-color: #193d5d;
+    -fx-text-fill: white; /* Header text color */
+    -fx-font-weight: bold; /* Bold header text */
+    -fx-alignment: center; /* Align header text to the center */
+    -fx-background-radius: 10px;
+}
+
+/* Table rows styling */
+.custom-table-view .table-row-cell {
+    -fx-background-color: #ffffff; /* Row background color */
+    -fx-border-color: #eeeeee; /* Border color for rows */
+    -fx-border-width: 0 0 1px 0; /* Only bottom border for rows */
+}
+
+.custom-table-view .table-row-cell:selected {
+    -fx-background-color: #0078d7; /* Background color for selected row */
+    -fx-text-fill: white; /* Text color for selected row */
+}
+
+/* Alternating row color */
+.custom-table-view .table-row-cell:odd {
+    -fx-background-color: #f9f9f9; /* Color for alternate rows */
+}
+
+/* Table cell text */
+.custom-table-view .table-cell {
+    -fx-padding: 10px; /* Padding inside each cell */
+    -fx-text-fill: #333333; /* Text color for cells */
+}
+
+/* Table focus highlight */
+.custom-table-view:focused {
+    -fx-background-color: #ffffff; /* Background when focused */
+}
+
+
+.glass-panel {
+    /* Background with frosted ice look */
+    -fx-background-color: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2));
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+
+    /* Frosted glass effect with a more intense blur */
+    -fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.2), 15, 0.5, 0, 0),
+                dropshadow(gaussian, rgba(0, 0, 0, 0.3), 15, 0.4, 0, 5),
+                gaussian-blur(40), /* Stronger blur for frosty ice effect */
+                lighting; /* Lighting for a 3D reflective ice look */
+
+    /* Frosty highlight border */
+    -fx-border-color: rgba(255, 255, 255, 0.6); /* Light border to enhance the ice edge */
+    -fx-border-width: 2;
+
+    /* Padding for content inside */
+    -fx-padding: 10;
+}
+
+
+
+
+
+

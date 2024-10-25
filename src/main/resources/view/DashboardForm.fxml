@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="694.0" prefWidth="1249.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet2.controller.DashBoardFormController">
+    <children>
+        <HBox fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="696.0" prefWidth="1246.0" style="-fx-background-color: #EAEEF4;">
+            <children>
+                <VBox prefHeight="696.0" prefWidth="247.0">
+                    <children>
+                        <AnchorPane fx:id="side_ankerpane" prefHeight="696.0" prefWidth="206.0" styleClass="side_ankerpane" stylesheets="@../style.css">
+                            <children>
+                                <Pane fx:id="inner_pane" layoutX="24.0" layoutY="20.0" prefHeight="73.0" prefWidth="200.0" styleClass="inner_pane" stylesheets="@../style.css">
+                                    <children>
+                                        <ImageView fitHeight="77.0" fitWidth="142.0" layoutX="-25.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@img/pane1.png" />
+                                            </image>
+                                        </ImageView>
+                                        <Pane fx:id="most_inner_pane" layoutX="161.0" layoutY="4.0" prefHeight="65.0" prefWidth="33.0" styleClass="most_inner_pane" stylesheets="@../style.css">
+                                            <children>
+                                                <ImageView fitHeight="37.0" fitWidth="61.0" layoutX="-4.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@img/icons8-menu-vertical-100.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </children>
+                                        </Pane>
+                                    </children>
+                                </Pane>
+                                <JFXButton fx:id="homeNavBtn" layoutX="24.0" layoutY="162.0" onAction="#homeNavBtnOnAction" prefHeight="54.0" prefWidth="200.0" styleClass="btn" stylesheets="@../style.css" text="Home" textFill="#fffbfb">
+                                    <font>
+                                        <Font name="Century Gothic Bold" size="14.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="44.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@img/homeBtn.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                                <JFXButton fx:id="addCustomerNavBtn" layoutX="24.0" layoutY="244.0" onAction="#addCustomerNavBtnOnAction" prefHeight="54.0" prefWidth="200.0" styleClass="btn" stylesheets="@../style.css" text="Add Customer" textFill="#fffbfb">
+                                    <font>
+                                        <Font name="Century Gothic Bold" size="14.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="44.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@img/icons8-add-user-48.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                                <JFXButton fx:id="placeOrderNavBtn" layoutX="24.0" layoutY="321.0" onAction="#placeOrderNavBtnOnAction" prefHeight="54.0" prefWidth="200.0" styleClass="btn" stylesheets="@../style.css" text="Place Order" textFill="#fffbfb">
+                                    <font>
+                                        <Font name="Century Gothic Bold" size="14.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="44.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@img/icons8-shopping-cart-100.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                                <JFXButton fx:id="supplierNavBtn" layoutX="24.0" layoutY="397.0" onAction="#supplierNavBtnOnAction" prefHeight="54.0" prefWidth="200.0" styleClass="btn" stylesheets="@../style.css" text="Supplier Details" textFill="#fffbfb">
+                                    <font>
+                                        <Font name="Century Gothic Bold" size="14.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="44.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@img/icons8-supplier-100.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                                <JFXButton fx:id="productNavBtn" layoutX="24.0" layoutY="471.0" onAction="#productNavBtnOnAction" prefHeight="54.0" prefWidth="200.0" styleClass="btn" stylesheets="@../style.css" text="Product Details" textFill="#fffbfb">
+                                    <font>
+                                        <Font name="Century Gothic Bold" size="14.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="44.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@img/icons8-product-100.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                                <JFXButton fx:id="manageEmployeeBtn" layoutX="24.0" layoutY="544.0" onAction="#ManageEmployeeNavBtnOnAction1" prefHeight="54.0" prefWidth="200.0" styleClass="btn" stylesheets="@../style.css" text="Mange Emplyee" textFill="#fffbfb">
+                                    <font>
+                                        <Font name="Century Gothic Bold" size="14.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="44.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@img/icons8-employee-100%20(1).png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </VBox>
+                <AnchorPane fx:id="homeAnchorpane" prefHeight="696.0" prefWidth="1011.0">
+                    <children>
+                        <ImageView fitHeight="634.0" fitWidth="1005.0" layoutX="371.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@img/gen/Default_A_simple_minimalist_background_for_clothing_shop_softw_2_b470f2b6-3caf-4f7b-bc53-1968ca09f142_0.png" />
+                            </image>
+                        </ImageView>
+                        <Pane fx:id="dpane_1" layoutX="61.0" layoutY="196.0" prefHeight="241.0" prefWidth="137.0" style="-fx-background-color: #7ea5c3;" styleClass="dpane_1" stylesheets="@../style.css">
+                            <children>
+                                <ImageView fitHeight="89.0" fitWidth="102.0" layoutX="24.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@img/icons8-users-100.png" />
+                                    </image>
+                                </ImageView>
+                                <Label layoutX="11.0" prefHeight="54.0" prefWidth="116.0" text="No. of Customers" textFill="WHITE">
+                                    <font>
+                                        <Font name="Century Gothic" size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="11.0" layoutY="152.0" prefHeight="89.0" prefWidth="116.0" text="10" textFill="WHITE">
+                                    <font>
+                                        <Font name="Century Gothic Bold" size="48.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </Pane>
+                        <Pane fx:id="dpane_11" layoutX="231.0" layoutY="196.0" prefHeight="241.0" prefWidth="137.0" style="-fx-background-color: #ffa397;" styleClass="dpane_1" stylesheets="@../style.css">
+                            <children>
+                                <ImageView fitHeight="89.0" fitWidth="102.0" layoutX="24.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@img/icons8-employee-100.png" />
+                                    </image>
+                                </ImageView>
+                                <Label layoutX="11.0" prefHeight="54.0" prefWidth="116.0" text="No.of Employees" textFill="WHITE">
+                                    <font>
+                                        <Font name="Century Gothic" size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="11.0" layoutY="152.0" prefHeight="89.0" prefWidth="116.0" text="2000" textFill="WHITE">
+                                    <font>
+                                        <Font name="Century Gothic Bold" size="48.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </Pane>
+                        <Pane fx:id="dpane_111" layoutX="61.0" layoutY="473.0" prefHeight="155.0" prefWidth="306.0" style="-fx-background-color: #ffa397;" styleClass="dpane_1" stylesheets="@../style.css">
+                            <children>
+                                <ImageView fitHeight="89.0" fitWidth="102.0" layoutX="11.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@img/icons8-sales-100.png" />
+                                    </image>
+                                </ImageView>
+                                <Label layoutX="11.0" prefHeight="54.0" prefWidth="116.0" text="Today sales" textFill="WHITE">
+                                    <font>
+                                        <Font name="Century Gothic" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="127.0" layoutY="63.0" prefHeight="89.0" prefWidth="191.0" text="2000" textFill="WHITE">
+                                    <font>
+                                        <Font name="Century Gothic Bold" size="48.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </Pane>
+                        <ImageView fitHeight="54.0" fitWidth="68.0" layoutX="903.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@img/icons8-admin-100.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="912.0" layoutY="635.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@img/icons8-log-out-100.png" />
+                            </image>
+                        </ImageView>
+                        <Label layoutX="849.0" layoutY="627.0" prefHeight="54.0" prefWidth="54.0" text="Log out" textFill="#193d5d">
+                            <font>
+                                <Font name="Century Gothic" size="14.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="61.0" layoutY="27.0" prefHeight="65.0" prefWidth="372.0" text="CLOTHIFY">
+                            <font>
+                                <Font name="System Bold Italic" size="48.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>
